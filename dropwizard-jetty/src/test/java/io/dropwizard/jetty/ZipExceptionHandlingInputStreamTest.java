@@ -1,5 +1,12 @@
 package io.dropwizard.jetty;
 
+import org.eclipse.jetty.http.BadMessageException;
+import org.junit.Test;
+import org.junit.experimental.runners.Enclosed;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.mockito.Mockito;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,12 +27,15 @@ import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
+<<<<<<< HEAD
 import org.eclipse.jetty.http.BadMessageException;
 import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mockito;
+=======
+>>>>>>> b3c99948416427db6f884c6eeda1add3cf9e7362
 
 @SuppressWarnings("ALL")
 @RunWith(Enclosed.class)

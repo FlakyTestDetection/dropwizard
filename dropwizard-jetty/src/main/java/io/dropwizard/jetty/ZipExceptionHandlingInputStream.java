@@ -1,12 +1,11 @@
 package io.dropwizard.jetty;
 
+import org.eclipse.jetty.http.BadMessageException;
+
 import java.io.EOFException;
-import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.zip.ZipException;
-
-import org.eclipse.jetty.http.BadMessageException;
 
 /**
  * This InputStream is used to decorate a GZIPInputStream or InflaterInputStream, intercept decompression
